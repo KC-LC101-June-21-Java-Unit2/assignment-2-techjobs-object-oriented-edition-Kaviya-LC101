@@ -104,6 +104,7 @@ public class TestTaskSix extends AbstractTest {
         try {
             positionTypeClass = getClassByName("PositionType");
             superclass = positionTypeClass.getSuperclass();
+
             assertEquals(superclass, jobFieldClass);
         } catch (ClassNotFoundException e) {
             fail("Class org.launchcode.techjobs.oo.PositionType does not exist");
